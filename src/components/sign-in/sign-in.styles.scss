@@ -1,13 +1,18 @@
 .sign-in {
-  width: 30vw;
+  width: 380px;
   display: flex;
   flex-direction: column;
-  padding: 15px 30px 20px 15px;
+  padding: 15px 15px 20px 15px;
   background-color: whitesmoke;
   box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.9);
   border-radius: 20px;
 
   .title {
     margin: 10px 0;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
   }
 }

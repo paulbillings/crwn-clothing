@@ -14,10 +14,30 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
+  }
+
+  &.google-sign-in {
+    background-color: #4285f4;
+    color: white;
+    padding: 0 30px 0 40px;
+
+    &:hover {
+      background-color: #357ae8;
+      border: none;
+    }
+  }
+
+  img {
+    flex-direction: row;
+    height: 40px;
+    width: 40px;
   }
 }

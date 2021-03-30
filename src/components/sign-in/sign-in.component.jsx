@@ -53,11 +53,16 @@ class SignIn extends React.Component {
             label="password"
             required
           />
-
-          <CustomButton type="submit">Sign In</CustomButton>
-          <CustomButton onClick={signInWithGoogle}>
-            Sign In With Google
-          </CustomButton>
+          <div className="buttons">
+            <CustomButton type="submit">Sign In</CustomButton>
+            <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+              Sign In With{" "}
+              <img
+                src="https://img.icons8.com/plasticine/100/000000/google-logo.png"
+                alt="google logo"
+              />
+            </CustomButton>
+          </div>
         </form>
       </div>
     );
